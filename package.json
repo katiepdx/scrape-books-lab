@@ -24,6 +24,8 @@
     "nodemon": "^2.0.4"
   },
   "dependencies": {
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "jsdom": "^16.4.0",
+    "node-fetch": "^2.6.1"
   }
 }
