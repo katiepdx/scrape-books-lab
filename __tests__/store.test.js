@@ -23,6 +23,12 @@ describe('Book model', () => {
         rating: 'Three', 
         price: '£51.77', 
         in_stock: true 
+      }, { 
+        title: 'Test Book 3', 
+        cover_image: 'catalogue/a-light-in-the-attic_1000/index.html', 
+        rating: 'Three', 
+        price: '£51.77', 
+        in_stock: true 
       }
     ];
 
@@ -34,10 +40,8 @@ describe('Book model', () => {
     // Select everything from db
     const { rows } = await pool.query('SELECT * FROM books');
 
-    console.log(rows);
-
     // expect only two rows
-    expect(rows).toHaveLength(2);
+    expect(rows).toHaveLength(3);
 
   });
 });
