@@ -8,8 +8,9 @@
     "test:watch": "npm run test -- --watch",
     "start": "node -r dotenv/config index.js",
     "start:watch": "nodemon -r dotenv/config index.js",
-    "scrape": "node -r dotenv/config scrape.js"
-
+    "scrape": "node -r dotenv/config scrape.js",
+    "producer": "node -r dotenv/config producer.js",
+    "consumer": "node -r dotenv/config consumer.js"
   },
   "jest": {
     "testEnvironment": "node"
@@ -26,6 +27,7 @@
     "nodemon": "^2.0.4"
   },
   "dependencies": {
+    "bull": "^3.18.0",
     "dotenv": "^8.2.0",
     "jsdom": "^16.4.0",
     "node-fetch": "^2.6.1",
