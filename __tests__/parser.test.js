@@ -15,8 +15,8 @@ describe('tests the book parse function', () => {
     // expect to equal an array containing a random book and details from page.
 
     expect(bookDetails).toEqual(expect.arrayContaining([
-      { title: 'A Light in the Attic', coverImage: 'catalogue/a-light-in-the-attic_1000/index.html', rating: 'Three', price: '£51.77', inStock: true },
-      { title: 'Sapiens: A Brief History of Humankind', coverImage: 'catalogue/sapiens-a-brief-history-of-humankind_996/index.html', rating: 'Five', price: '£54.23', inStock: true }
+      { title: 'A Light in the Attic', cover_image: 'catalogue/a-light-in-the-attic_1000/index.html', rating: 'Three', price: '£51.77', in_stock: true },
+      { title: 'Sapiens: A Brief History of Humankind', cover_image: 'catalogue/sapiens-a-brief-history-of-humankind_996/index.html', rating: 'Five', price: '£54.23', in_stock: true }
     ]));
 
   });
