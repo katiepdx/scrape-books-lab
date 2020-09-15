@@ -5,7 +5,7 @@ describe('tests the book parse function', () => {
   it('should take the document html and return an array of all the books and their details', async() => {
     
     // get the document
-    const document = await request();
+    const document = await request(2);
 
     // get the li/the books from the document
     const bookDetails = await parser(document);
@@ -15,8 +15,8 @@ describe('tests the book parse function', () => {
     // expect to equal an array containing a random book and details from page.
 
     expect(bookDetails).toEqual(expect.arrayContaining([
-      { title: 'A Light in the Attic', cover_image: 'catalogue/a-light-in-the-attic_1000/index.html', rating: 'Three', price: '£51.77', in_stock: true },
-      { title: 'Sapiens: A Brief History of Humankind', cover_image: 'catalogue/sapiens-a-brief-history-of-humankind_996/index.html', rating: 'Five', price: '£54.23', in_stock: true }
+      { title: 'In Her Wake', cover_image: 'in-her-wake_980/index.html', rating: 'One', price: '£12.84', in_stock: true },
+      { title: 'The Four Agreements: A Practical Guide to Personal Freedom', cover_image: 'the-four-agreements-a-practical-guide-to-personal-freedom_970/index.html', rating: 'Five', price: '£17.66', in_stock: true }
     ]));
 
   });
