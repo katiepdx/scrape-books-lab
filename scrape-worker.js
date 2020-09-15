@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 // import request, parse, store, and pool
 const request = require('./lib/request.js');
 const parser = require('./lib/parser.js');
